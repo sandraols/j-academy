@@ -19,7 +19,7 @@
   font-family: "Oswald", sans-serif;
   font-weight: 600;
   text-transform: uppercase;
-  margin-bottom: 36px;
+  margin-bottom: 56px;
   font-size: 56px;
   text-align: center;
 }
@@ -31,7 +31,7 @@
   flex-direction: column;
   list-style: none;
   overflow: hidden;
-  height: 75vh;
+  height: 46vh;
 }
 
 .nav__list a {
@@ -45,11 +45,33 @@
   text-decoration: none;
   text-align: center;
   font-size: 24px;
-  width: 300px;
+  padding: 12px;
 }
 
-.nav__link:hover {
+li:nth-of-type(1):hover {
   background: -webkit-linear-gradient(10deg, yellow, #ff7dd8);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+li:nth-of-type(2):hover {
+  background: -webkit-linear-gradient(10deg, #2bff00, #00fff2);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+li:nth-of-type(3):hover {
+  background: -webkit-linear-gradient(10deg, red, #ffbb00);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+li:nth-of-type(4):hover {
+  background: -webkit-linear-gradient(10deg, #3fffff, #f830ff);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -66,6 +88,7 @@
 
 .name:hover {
   background: -webkit-linear-gradient(10deg, yellow, #ff7dd8);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
