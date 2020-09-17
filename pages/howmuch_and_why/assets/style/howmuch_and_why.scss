@@ -1,0 +1,25 @@
+@import '../../../../style.scss';
+
+.background {
+    @include flex-with-direction(column, space-around, center);
+    height: 176vh;
+    background: linear-gradient(10deg, #a3ff90, #a9fffb);
+}
+
+.main__heading {
+    @extend %headings;
+    font-size: 36px;
+    max-width: 410px;
+}
+.paragraph__container {
+    // width: 33vw;
+    max-width: 350px;
+    padding: 12px;
+}
+.paragraph {
+    font-family: $main-font;
+    // font-family: $paragraph-font;
+    // font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    // line-height: 1.5;
+}

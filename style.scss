@@ -5,6 +5,7 @@
 }
 
 $main-font: 'Oswald', sans-serif;
+$paragraph-font: 'Montserrat', sans-serif;
 $text-color: black;
 // $primary-color: yellow;
 // $secondary-color: rgb(255, 125, 216);
@@ -36,6 +37,7 @@ $text-color: black;
     position: absolute;
 }
 .main__header {
+    @extend %headings;
     color: $text-color;
     font-family: $main-font;
     margin-bottom: 56px;
