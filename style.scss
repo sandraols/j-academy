@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+$main-font: 'Oswald', sans-serif;
+$text-color: black;
+// $primary-color: yellow;
+// $secondary-color: rgb(255, 125, 216);
+
+@mixin flex-justify-align($justify, $align) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin flex-with-direction($direction, $justify, $align) {
+    @include flex-justify-align($justify, $align);
+    flex-direction: $direction;
+}
+
+.header {
+    @include flex-with-direction(column, center, center);
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+}
+.main__header {
+    color: $text-color;
+    font-family: $main-font;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 36px;
+    font-size: 56px;
+    text-align: center;
+}
+
+.nav__list {
+    @include flex-with-direction(column, space-between, center);
+    list-style: none;
+    overflow: hidden;
+    height: 75vh;
+}
+
+.nav__list a {
+    display: block;
+}
+
+.nav__link {
+    color: $text-color;
+    font-family: $main-font;
+    font-weight: 400;
+    text-decoration: none;
+    text-align: center;
+    font-size: 24px;
+    width: 300px;
+}
+
+.nav__link:hover {
+    background: -webkit-linear-gradient(10deg, yellow, rgb(255, 125, 216));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.name {
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    font-size: 16px;
+    font-family: $main-font;
+    text-decoration: none;
+    color: $text-color;
+}
+
+.name:hover {
+    background: -webkit-linear-gradient(10deg, yellow, rgb(255, 125, 216));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

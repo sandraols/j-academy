@@ -1,73 +1,73 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .header {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    width: 100vw;
-    position: absolute;
-    /* width: 80vw; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
 }
+
 .main__header {
-    color: black;
-    font-family: 'Oswald', sans-serif;
-    font-weight: 600;
-    text-transform: uppercase;
-    margin-bottom: 36px;
-    font-size: 56px;
+  color: black;
+  font-family: "Oswald", sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 36px;
+  font-size: 56px;
+  text-align: center;
 }
 
 .nav__list {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    list-style: none;
-    overflow: hidden;
-    height: 75vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  list-style: none;
+  overflow: hidden;
+  height: 75vh;
 }
 
 .nav__list a {
-    display: block;
+  display: block;
 }
 
 .nav__link {
-    color: black;
-    font-family: 'Oswald', sans-serif;
-    font-weight: 400;
-    text-decoration: none;
-    text-align: center;
-    font-size: 24px;
-    width: 300px;
-    transition: background 0.2s ease;
-    -webkit-transition: background 0.2s ease;
+  color: black;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  text-decoration: none;
+  text-align: center;
+  font-size: 24px;
+  width: 300px;
 }
 
 .nav__link:hover {
-    background: -webkit-linear-gradient(10deg, yellow, rgb(255, 125, 216));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  background: -webkit-linear-gradient(10deg, yellow, #ff7dd8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .name {
-    position: absolute;
-    bottom: 5px;
-    left: 5px;
-    font-size: 16px;
-    font-family: 'Oswald', sans-serif;
-    text-decoration: none;
-    color: black;
-    transition: background 0.2s ease;
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+  font-size: 16px;
+  font-family: "Oswald", sans-serif;
+  text-decoration: none;
+  color: black;
 }
 
 .name:hover {
-    background: -webkit-linear-gradient(10deg, yellow, rgb(255, 125, 216));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  background: -webkit-linear-gradient(10deg, yellow, #ff7dd8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
+
+/*# sourceMappingURL=style.css.map */
