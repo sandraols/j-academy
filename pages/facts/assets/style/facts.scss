@@ -1,0 +1,64 @@
+@import '../../../../style.scss';
+
+.container {
+    @include flex-with-direction(column, space-around, center);
+    height: 100vh;
+    width: 100vw;
+}
+
+.facts__heading {
+    @extend %headings;
+    font-size: 36px;
+    max-width: 538px;
+}
+
+.facts__list {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 24px;
+    position: relative;
+    z-index: 1;
+}
+
+.fact {
+    font-family: $main-font;
+    list-style: none;
+    font-size: 18px;
+}
+
+.vector {
+    position: absolute;
+}
+
+.vector--dumplings {
+    width: 200px;
+    top: 25%;
+    left: 15%;
+}
+.vector--pacman {
+    width: 100px;
+    left: 30%;
+    top: 55%;
+}
+.vector--gandalf {
+    width: 400px;
+    left: 0;
+    bottom: 0;
+}
+.vector--game {
+    width: 300px;
+    left: -10%;
+    top: 5%;
+}
+.vector--diver {
+    width: 300px;
+    top: 10%;
+    right: 8%;
+}
+.vector--nofish {
+    width: 250px;
+    bottom: 2%;
+    right: 10%;
+}
