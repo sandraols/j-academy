@@ -20,6 +20,15 @@ $text-color: black;
     flex-direction: $direction;
 }
 
+%headings {
+    font-family: $main-font;
+    color: $text-color;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 56px;
+}
+
 .header {
     @include flex-with-direction(column, center, center);
     height: 100vh;
@@ -29,11 +38,10 @@ $text-color: black;
 .main__header {
     color: $text-color;
     font-family: $main-font;
-    font-weight: 600;
-    text-transform: uppercase;
     margin-bottom: 56px;
-    font-size: 56px;
-    text-align: center;
+    // text-transform: uppercase;
+    // font-size: 56px;
+    // text-align: center;
 }
 
 .nav__list {
@@ -45,41 +53,41 @@ $text-color: black;
 
 .nav__list a {
     display: block;
+    text-decoration: none;
+    color: $text-color;
 }
 
 .nav__link {
-    color: $text-color;
     font-family: $main-font;
     font-weight: 400;
-    text-decoration: none;
     text-align: center;
     font-size: 24px;
     // width: 400px;
     padding: 12px;
 }
 
-li:nth-of-type(1):hover {
+.nav__link:nth-of-type(1):hover {
     background: -webkit-linear-gradient(10deg, yellow, rgb(255, 125, 216));
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-li:nth-of-type(2):hover {
+.nav__link:nth-of-type(2):hover {
     background: -webkit-linear-gradient(10deg, rgb(43, 255, 0), rgb(0, 255, 242));
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-li:nth-of-type(3):hover {
+.nav__link:nth-of-type(3):hover {
     background: -webkit-linear-gradient(10deg, rgb(255, 0, 0), rgb(255, 187, 0));
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-li:nth-of-type(4):hover {
+.nav__link:nth-of-type(4):hover {
     background: -webkit-linear-gradient(10deg, rgb(63, 255, 255), rgb(248, 48, 255));
     background-clip: text;
     -webkit-background-clip: text;
