@@ -10,7 +10,6 @@
   </head>
   <body>
     <div class="background">
-
       <div class="text-container">
         <p class="text text--position one">Pick me!</p>
         <p class="text text--position two">Pick me!</p>
@@ -19,97 +18,60 @@
       </div>
 
       <div class="text-container">
-            <p class="text text--position four">Pick me!</p>
-            <p class="text text--position one">Pick me!</p>
-            <p class="text text--position two">Pick me!</p>
-            <p class="text text--position three">Pick me!</p>
+        <p class="text text--position four">Pick me!</p>
+        <p class="text text--position one">Pick me!</p>
+        <p class="text text--position two">Pick me!</p>
+        <p class="text text--position three">Pick me!</p>
       </div>
 
       <div class="text-container">
-            <p class="text text--position one">Pick me!</p>
-            <p class="text text--position two">Pick me!</p>
-            <p class="text text--position three">Pick me!</p>
-            <p class="text text--position four">Pick me!</p>
+        <p class="text text--position one">Pick me!</p>
+        <p class="text text--position two">Pick me!</p>
+        <p class="text text--position three">Pick me!</p>
+        <p class="text text--position four">Pick me!</p>
       </div>
       <div class="text-container">
-            <p class="text text--position three">Pick me!</p>
-            <p class="text text--position four">Pick me!</p>
-            <p class="text text--position one">Pick me!</p>
-            <p class="text text--position two">Pick me!</p>
-      </div>
-
-      <div class="text-container">
-            <p class="text text--position two">Pick me!</p>
-            <p class="text text--position three">Pick me!</p>
-            <p class="text text--position four">Pick me!</p>
-            <p class="text text--position one">Pick me!</p>
+        <p class="text text--position three">Pick me!</p>
+        <p class="text text--position four">Pick me!</p>
+        <p class="text text--position one">Pick me!</p>
+        <p class="text text--position two">Pick me!</p>
       </div>
 
       <div class="text-container">
-            <p class="text text--position four">Pick me!</p>
-            <p class="text text--position one">Pick me!</p>
-            <p class="text text--position two">Pick me!</p>
-            <p class="text text--position three">Pick me!</p>
+        <p class="text text--position two">Pick me!</p>
+        <p class="text text--position three">Pick me!</p>
+        <p class="text text--position four">Pick me!</p>
+        <p class="text text--position one">Pick me!</p>
+      </div>
+
+      <div class="text-container">
+        <p class="text text--position four">Pick me!</p>
+        <p class="text text--position one">Pick me!</p>
+        <p class="text text--position two">Pick me!</p>
+        <p class="text text--position three">Pick me!</p>
       </div>
       <div class="text-container">
-            <p class="text text--position four">Pick me!</p>
-            <p class="text text--position one">Pick me!</p>
-            <p class="text text--position two">Pick me!</p>
-            <p class="text text--position three">Pick me!</p>
+        <p class="text text--position four">Pick me!</p>
+        <p class="text text--position one">Pick me!</p>
+        <p class="text text--position two">Pick me!</p>
+        <p class="text text--position three">Pick me!</p>
       </div>
-      
+
       <div class="text-container">
-          <p class="text text--position two">Pick me!</p>
-          <p class="text text--position three">Pick me!</p>
-          <p class="text text--position four">Pick me!</p>
-          <p class="text text--position one">Pick me!</p>
-        </div>
-        
-        <div class="text-container">
-          <p class="text text--position one">Pick me!</p>
-          <p class="text text--position two">Pick me!</p>
-          <p class="text text--position three">Pick me!</p>
-          <p class="text text--position four">Pick me!</p>
-        </div>
+        <p class="text text--position two">Pick me!</p>
+        <p class="text text--position three">Pick me!</p>
+        <p class="text text--position four">Pick me!</p>
+        <p class="text text--position one">Pick me!</p>
+      </div>
+
+      <div class="text-container">
+        <p class="text text--position one">Pick me!</p>
+        <p class="text text--position two">Pick me!</p>
+        <p class="text text--position three">Pick me!</p>
+        <p class="text text--position four">Pick me!</p>
+      </div>
       <a href="../../index.html" class="back__button">Go Back</a>
     </div>
+    <script src="./assets/script.js"></script>
   </body>
-  <script>
-      const textElements = document.getElementsByClassName("text");
-
-      window.setInterval(function(){
-
-          for (let i = 0; i < textElements.length; i++) {
-              const classNames = textElements[i].className;
-              const classNamesArray = classNames.split(" ");
-              const number = classNamesArray[classNamesArray.length -1];
-
-            switch (number) {
-                case "one":
-                classNamesArray.pop();
-                classNamesArray.push("four");
-                textElements[i].className = classNamesArray.join(" ");
-                break;
-                case "two":
-                classNamesArray.pop();
-                classNamesArray.push("one");
-                textElements[i].className = classNamesArray.join(" ");
-                break;
-                case "three":
-                classNamesArray.pop();
-                classNamesArray.push("two");
-                textElements[i].className = classNamesArray.join(" ");
-                break;
-                case "four":
-                classNamesArray.pop();
-                classNamesArray.push("three");
-                textElements[i].className = classNamesArray.join(" ");
-                break;
-            
-                default:
-                    break;
-            }  
-          }
-      }, 300);
-  </script>
 </html>
