@@ -10,7 +10,6 @@
   font-weight: 600;
   text-align: center;
   text-transform: uppercase;
-  font-size: 56px;
 }
 
 .header {
@@ -26,7 +25,8 @@
 .main__header {
   color: black;
   font-family: "Oswald", sans-serif;
-  margin-bottom: 56px;
+  margin-bottom: 46px;
+  font-size: 36px;
 }
 
 .nav__list {
@@ -36,7 +36,7 @@
   flex-direction: column;
   list-style: none;
   overflow: hidden;
-  height: 46vh;
+  height: 40vh;
 }
 
 .nav__list a {
@@ -51,13 +51,31 @@
   text-align: center;
   font-size: 24px;
   padding: 12px;
+  display: inline-block;
+}
+
+.nav__link:after {
+  display: block;
+  content: "";
+  height: 4px;
+  transition: transform 250ms ease-in-out;
+  transform: scaleX(0);
+}
+
+.nav__link:hover:after {
+  transform: scaleX(1);
 }
 
 .nav__link:nth-of-type(1):hover {
-  background: -webkit-linear-gradient(10deg, yellow, #ff7dd8);
+  background: -webkit-linear-gradient(10deg, #3fffff, #f830ff);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.nav__link:nth-of-type(1):after {
+  background: #3fffff;
+  box-shadow: inset -200px 0px 30px -25px #f830ff;
 }
 
 .nav__link:nth-of-type(2):hover {
@@ -68,14 +86,7 @@
 }
 
 .nav__link:nth-of-type(3):hover {
-  background: -webkit-linear-gradient(10deg, red, #ffbb00);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.nav__link:nth-of-type(4):hover {
-  background: -webkit-linear-gradient(10deg, #3fffff, #f830ff);
+  background: -webkit-linear-gradient(10deg, yellow, #ff7dd8);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -83,12 +94,28 @@
 
 .name {
   position: absolute;
-  bottom: 5px;
-  left: 5px;
-  font-size: 16px;
+  bottom: 2%;
+  left: 2%;
   font-family: "Oswald", sans-serif;
-  text-decoration: none;
   color: black;
+  font-size: 18px;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.name:after {
+  display: block;
+  content: "";
+  height: 2px;
+  transition: transform 250ms ease-in-out;
+  transform: scaleX(0);
+  background: yellow;
+  box-shadow: inset -60px 0px 30px -25px #ff7dd8;
+}
+
+.name:hover:after {
+  transform: scaleX(1);
 }
 
 .name:hover {
@@ -96,6 +123,20 @@
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  border-bottom: none;
+}
+
+.back__button {
+  font-family: "Oswald", sans-serif;
+  font-size: 18px;
+  color: black;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-bottom: 2px solid black;
+  position: fixed;
+  left: 3%;
+  bottom: 3%;
 }
 
 .background {
